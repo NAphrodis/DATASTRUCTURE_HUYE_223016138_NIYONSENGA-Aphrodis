@@ -40,11 +40,8 @@ def undo_registration():
             if registration_to_remove in registration_queue:
                 registration_queue.remove(registration_to_remove)
                 print(f"Registration for {last_action['name']} for {last_action['event']['name']} has been undone.")
-            else:
-                print("Registration not found in the queue.")
-        else:
-            print("No action to undo.")
-    else:
+            
+   else:
         print("No actions to undo.")
 
 def view_registrations():
